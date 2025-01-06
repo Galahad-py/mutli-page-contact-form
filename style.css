@@ -1,0 +1,328 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* container styles */
+.container {
+    display: flex;
+    align-items: start;
+    gap: 250px;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* nav styling */
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 30px 20px 20px;
+    background-color: #FAFAFA;
+    border-radius: 18px;
+    height: 100%;
+    max-width: 350px;
+}
+
+.gradient-circle-nav {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the div a perfect circle */
+    background: url('/images/codioful-formerly-gradienta-LeG68PrXA6Y-unsplash.jpg') no-repeat center/cover; /* Background image */
+    display: inline-block; /* Ensures the element is inline if needed */
+    margin-bottom: 20px;
+}
+
+/* chat styles */
+.chat-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.chat-text h3 {
+    font-size: 14px;
+}
+.chat-text p {
+    font-size: 11px;
+    color: #878789
+}
+
+.chat-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+.liveChat, .emailChat, .twitterChat {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.liveChat img, .emailChat img, .twitterChat img {
+    width: 14px;
+    height: 14px;
+}
+
+.liveChat p, .emailChat p, .twitterChat p {
+    font-size: 11px;
+}
+
+/* call styles */
+.call {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.callUs-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.callUs-text h3 {
+    font-size: 14px;
+}
+
+.callUs-text p {
+    font-size: 11px;
+    color: #878789;
+}
+
+.contactNumber {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+.contactNumber img {
+    width: 14px;
+    height: 14px;
+}
+
+.contactNumber p {
+    font-size: 11px;
+}
+
+/* visit us styles */
+.visit {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: auto;
+}
+
+.visitUs {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.visitUs h3 {
+    font-size: 14px;
+}
+
+.visitUs p {
+    font-size: 11px;
+    color: #878789;
+}
+
+/* address */
+.address {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    gap: 6px;
+}
+
+.firstAddress, .secondAddress {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    gap: 6px;
+}
+.firstAddress img, .secondAddress img {
+    width: 14px;
+    height: 14px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.footer img {
+    width: 100%;
+    height: 100%;
+}
+
+/* main-body */
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 500px;
+    margin-top: 30px;
+}
+
+.gradient-circle {
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the div a perfect circle */
+    background: url('/images/codioful-formerly-gradienta-LeG68PrXA6Y-unsplash.jpg') no-repeat center/cover; /* Background image */
+    display: inline-block; /* Ensures the element is inline if needed */
+}
+  
+  
+
+.body-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.body-header h2{
+    font-size: 20px;
+}
+
+.body-header p{
+    font-size: 11px;
+    color: #878789;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 12px;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+}
+
+.grid-item h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.grid-item p {
+    font-size: 11px;
+    color: #878789;
+}
+
+.grid-item:hover {
+    background-color: #f3f3f3;
+}
+
+.grid-item-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+    margin-bottom: 10px;
+}
+
+.grid-item-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.next-step-btn,
+.go-back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 13px;
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-btn:hover,
+.next-step-btn:hover {
+  background-color: #cfcfcf;
+}
+
+.next-step-btn {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.go-back-btn {
+    border: 1px solid rgb(222, 222, 222);
+    background-color: #ffffff;
+    color: #111111;
+    gap: 6px;
+}
+
+.go-back-btn img {
+    width: 12px;
+    height: 12px;
+}
+
+
+
+
